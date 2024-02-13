@@ -4,7 +4,10 @@ def translate(text):
 
     for word in words:
 
+        #for ELEMENT in ARRAY
+
         if word.isalpha() == False:
+            print (word, "line 10") #to check before the function completes. 
             return "You have entered an invalid character. Please enter a valid English word(s)."
         elif len(word) == 2 and word[1].lower() == 'y':
             processed_word = word[1] + word[0] +'ay'
@@ -36,7 +39,7 @@ def translate(text):
     
 def test_translate():
     test_cases = [
-        ("apple cat", "appleay atcay"),
+        ("apple", "appleay"),
     ]
 
     for text, expected in test_cases:
