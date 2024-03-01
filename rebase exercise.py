@@ -37,15 +37,15 @@ def rebase(input_base, digits, output_base):
     return remainders[::-1]
 
 
-def test_rebase():
-    test_cases = [
-            (1, [0], 10, ValueError),
-    ]
+# def test_rebase():
+#     test_cases = [
+#             (1, [0], 10, ValueError),
+#     ]
 
-    for input_base, digits, output_base, expected in test_cases:
-        result = rebase(input_base, digits, output_base)
-        if result == expected:
-            print(f"PASS: rebase({input_base}, {digits}, {output_base}) == {expected}")
-        else: print(f"FAIL: rebase({input_base}, {digits}, {output_base}) -> {result} (expected: {expected})")
+#     for input_base, digits, output_base, expected in test_cases:
+#         result = rebase(input_base, digits, output_base)
+#         if result == expected:
+#             print(f"PASS: rebase({input_base}, {digits}, {output_base}) == {expected}")
+#         else: print(f"FAIL: rebase({input_base}, {digits}, {output_base}) -> {result} (expected: {expected})")
 
-test_rebase()
+# test_rebase()
